@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class LoopAssignement1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		int num = 1;
+		int squareNum = 0;
+		int sum = 0;
+		
+		System.out.println("Please enter a number for n");
+		int n = in.nextInt();
+		
+		while(n >= num) {
+			squareNum = num * num;
+			System.out.println(num + ": " +squareNum);
+			num++;
+		}
+		
+		for(num = 1; num <= n; num++) {
+			sum = sum + num;
+		}
+		
+		System.out.println("Sum: " + sum);
+		
+	}
+
+}
